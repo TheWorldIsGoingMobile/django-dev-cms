@@ -1,6 +1,6 @@
-Django-dev-cms is a small and minimalist cms designed, as the name says, for<br/>
-developers who have a basic knowledge of the django template engine, his tags<br/>
-and filters, some kind of html and a little bit of css.<br/>
+Django-dev-cms is a small and minimalist cms designed, as the name says, for
+developers who have a basic knowledge of the django template engine, his tags
+and filters, some kind of html and a little bit of css.
 
 It reads templates and stylesheets (css) direct from the database, instead of 
 from the filesystem.
