@@ -1,6 +1,6 @@
 from django.contrib import admin
 from mptt.admin import MPTTModelAdmin
-from dev-cms.models import Template, Style, Page, Content
+from devcms.models import Template, Style
 
 class TemplateAdmin(MPTTModelAdmin):
     pass
@@ -12,12 +12,3 @@ class StyleAdmin(admin.ModelAdmin):
 
 admin.site.register(Style, StyleAdmin)
 
-class PageAdmin(MPTTModelAdmin):
-    pass
-
-admin.site.register(Page, PageAdmin)
-
-class ContentAdmin(admin.ModelAdmin):
-    pass
-
-admin.site.register(Content, ContentAdmin)
