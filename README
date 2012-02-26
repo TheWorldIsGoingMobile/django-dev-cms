@@ -34,10 +34,6 @@ urlpatterns = patterns('',
     ...
     # Read stylesheets (css) from database
     (r'(.*)\.css$', 'dev-cms.views.load_css'),
-
-    ...
-    # Try to find a cms page - must be the last pattern
-    (r'(.*)', 'dev-cms.views.direct_to_cms'),
 )
 
-3) Go to the admin area and create templates, stylesheets, pages and content.
+3) Go to the admin area and create templates (pages) and stylesheets.
