@@ -9,14 +9,14 @@ It requires mptt (https://github.com/django-mptt/django-mptt/), so install it
 before install django-dev-cms.
 
 To install django-dev-cms, download and unzip the dev-cms folder in a place
-inside the PYTHON PATH.
+inside the PYTHON PATH, a folder called devcms, for example.
 
 To use django-dev-cms, follow the next simple steps: 
 
 1) In settings.py modify the following keys:
 
 TEMPLATE_LOADERS = (
-    'dev-cms.db_loader.load_template_source',
+    'devcms.db_loader.load_template_source',
     ...
 )
 
@@ -24,7 +24,7 @@ TEMPLATE_LOADERS = (
 
 INSTALLED_APPS = (
     ...
-    'dev-cms',
+    'devcms',
 )
 
 
@@ -33,7 +33,8 @@ INSTALLED_APPS = (
 urlpatterns = patterns('',
     ...
     # Read stylesheets (css) from database
-    (r'(.*)\.css$', 'dev-cms.views.load_css'),
+    (r'(.*)\.css$', 'devcms.views.load_css'),
 )
 
 3) Go to the admin area and create templates (pages) and stylesheets.
+
