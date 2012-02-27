@@ -24,6 +24,7 @@ TEMPLATE_LOADERS = (
 
 INSTALLED_APPS = (
     ...
+    'mptt',
     'devcms',
 )
 
