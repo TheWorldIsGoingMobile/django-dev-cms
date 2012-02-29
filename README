@@ -33,8 +33,14 @@ INSTALLED_APPS = (
 
 urlpatterns = patterns('',
     ...
+
     # Read stylesheets (css) from database
     (r'(.*)\.css$', 'devcms.views.load_css'),
+
+    ...
+
+    # Try to find a cms page. It must be the last pattern
+    (r'(.*)', 'devcms.views.direct_to_cms'),
 )
 
 3) Go to the admin area and create templates (pages) and stylesheets.
