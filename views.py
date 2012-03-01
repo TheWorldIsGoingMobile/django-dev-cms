@@ -25,7 +25,7 @@ def direct_to_cms(request, path):
 
     try:
         t = Template.objects.get(path=path)
-    except Page.DoesNotExist:
+    except Template.DoesNotExist:
         raise Http404
     
     return render_to_response(t, context_instance=RequestContext(request))
