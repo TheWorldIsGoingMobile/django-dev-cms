@@ -45,3 +45,21 @@ urlpatterns = patterns('',
 
 3) Go to the admin area and create templates (pages) and stylesheets.
 
+4) In the templates, you can use the markup/endmarkup tags to mark blocks of
+   textile, markdown or restructuredtext text to be translated to html.
+   
+   Example:
+   
+   {% load devcms_tags %}
+   
+   ...
+   
+   {% markup textile %}
+   h1. This is a header in textile
+
+   !/static/img/mypicture.jpg!
+
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius est at
+   purus eleifend commodo. Quisque et orci id est interdum viverra. Ut lacinia
+   nunc elit. Integer gravida quam tellus, in sollicitudin ligula.
+   {% endmarkup %}
