@@ -3,7 +3,8 @@ from mptt.admin import MPTTModelAdmin
 from devcms.models import Template, Style
 
 class TemplateAdmin(MPTTModelAdmin):
-    pass
+    #pass
+    list_display = ('tree_name', 'name', 'path',)
 
 admin.site.register(Template, TemplateAdmin)
 
